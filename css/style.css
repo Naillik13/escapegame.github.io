@@ -1,0 +1,15 @@
+html, body{
+    margin:0;
+    height:100%;
+    width:100%;
+}
+body{
+    background:url(../img/bg_poker.jpg);
+    background-size:cover;
+    background-position:80%;
+}
+p{
+    color: white;
+    font-family: montserrat;
+    text-transform:uppercase;
+}
