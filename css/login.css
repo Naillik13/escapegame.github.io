@@ -1,18 +1,37 @@
-form {
-    background-color:#1d2124;
-    padding:.5rem;
-    margin:0 !important;
+html, body{
+    height:100%;
 }
 input{
-    background-color: #fff0;
-    border: none;
-    border-bottom: 2px solid white;
+    background-color:#10171e;
+    border: 1px solid #143f55;
+    color:#0084B4;
+    border-radius:5px;
+    font-size:0.8rem;
+    padding:0.2rem 0.4rem;
 }
 input::-webkit-input-placeholder{
-    color: #a9a9a9;
+    color: #004667;
+}
+nav{
+    background-color:#1b2938;
+    padding:0.5rem;
+}
+form{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
 }
 button{
-    color: white;
-    border: 1px solid white;
-    background-color: #ffffff00;
+    border:1px solid #06719a;
+    color: #06719a;
+    font-size:0.8rem;
+    padding:0.3rem 0.5rem;
+    border-radius:20px;
+    background-color: rgba(255,255,255, 0);
+}
+.sketchfab-embed-wrapper{
+    width:100%;
+}
+.sketchfab-embed-wrapper iframe{
+    width:100%;
 }

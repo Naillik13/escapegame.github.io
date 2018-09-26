@@ -31,16 +31,22 @@ if (!empty( $_POST )) {
     <meta keyword="">
     <meta description="">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
 </head>
 <body>
-<form method="POST" class="row">
-    <div id="input-name" class="col-6"><input type="text" name="username" placeholder="Pseudo"><br/><input type="password" name="password" placeholder="Password"></div>
-    <button name="btn_login" type="submit" class="col-4 offset-1 text-center">SE CONNECTER</button>
+<nav>
+<form method="POST">
+    <div id="input-name"><input class="mb-2" type="text" name="username" placeholder="Pseudo"><br/><input type="password" name="password" placeholder="Password"></div>
+    <button name="btn_login" type="submit">SE CONNECTER</button>
 </form>
+</nav>
 <?php if ( isset( $erreur ) ) : ?>
     <div class="alert alert-danger"><?= $erreur ?></div>
 <?php endif ?>
+<div class="sketchfab-embed-wrapper"><iframe height="480" src="https://sketchfab.com/models/399c0b3023fc434ebfaa74517469c798/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+</div>
 </body>
 </html>
