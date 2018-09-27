@@ -10,14 +10,15 @@
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html" ;="" charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
     <title>Le Motel</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta keyword="">
     <meta description="">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/blog.css">

@@ -1,7 +1,10 @@
 <?php
 session_start();
-if ( !isset( $_SESSION['id'] ) && !isset($_GET['id']) ) {
+if ( !isset( $_SESSION['id'] )  ) {
     header( 'Location: login.php');
+}
+if (!isset($_GET['id'])){
+    header( 'Location: blog.php');
 }
 require_once 'inc/functions.php';
 
@@ -10,14 +13,15 @@ $article = bdd_select('SELECT id, titre, contenu, date, url FROM article WHERE i
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html" ;="" charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
     <title>Le Motel</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta keyword="">
     <meta description="">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 

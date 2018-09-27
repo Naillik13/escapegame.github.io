@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ( isset( $_SESSION['id'] ) ) {
-    header( 'Location: index.html');
+    header( 'Location: blog.php');
 }
 if (!empty( $_POST )) {
     extract( $_POST );
@@ -12,7 +12,7 @@ if (!empty( $_POST )) {
     if ($membre) {
         $_SESSION['id'] = $membre['id'];
         $_SESSION['username'] = $_POST['username'];
-        header( 'Location: index.html');
+        header( 'Location: blog.php');
     }
     else {
         $erreur = 'Raté... Essayes encore !';
@@ -30,6 +30,7 @@ if (!empty( $_POST )) {
     <meta charset="utf-8">
     <meta keyword="">
     <meta description="">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
@@ -38,7 +39,7 @@ if (!empty( $_POST )) {
 <body>
 <nav>
 <form method="POST">
-    <div id="input-name"><input class="mb-2" type="text" name="username" placeholder="Pseudo"><br/><input type="password" name="password" placeholder="Password"></div>
+    <div id="input-name"><input class="mb-2" type="text" name="username" placeholder="Nom"><br/><input type="password" name="password" placeholder="Prénom"></div>
     <button name="btn_login" type="submit">SE CONNECTER</button>
 </form>
 </nav>

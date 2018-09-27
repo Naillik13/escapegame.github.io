@@ -16,8 +16,8 @@ function bdd_insert( string $query, array $params = [] ) : int {
   echo $inserted;
 }
 bdd_insert('INSERT INTO utilisateur (username, password) VALUES (:username, :password)', [
-  'username' => 'LeMotel',
-  'password' => password_hash( 'password', PASSWORD_DEFAULT)
+  'username' => 'martin',
+  'password' => password_hash( 'charles', PASSWORD_DEFAULT)
 ]);
 
 ?>
